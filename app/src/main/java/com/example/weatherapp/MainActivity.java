@@ -231,9 +231,9 @@ public class MainActivity extends AppCompatActivity {
     private void requestCurrentLocation() {
 
         LocationRequest locationRequest = new LocationRequest.Builder(
-                Priority.PRIORITY_HIGH_ACCURACY, 1000) // 10 seconds interval
-                .setMinUpdateIntervalMillis(500)       // Fastest interval of 5 seconds
-                .setMaxUpdates(1)                       // Get only one update for current location
+                Priority.PRIORITY_HIGH_ACCURACY, 1000) 
+                .setMinUpdateIntervalMillis(500)       
+                .setMaxUpdates(1)                       
                 .build();
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
